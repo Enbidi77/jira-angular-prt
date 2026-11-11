@@ -1,10 +1,10 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+@source "../../../libs";
+@source "../src";
 
 :root {
-  --font-sans:
-    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
-    Arial, sans-serif;
-
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
   /* Light theme */
   --bg-app: #f8fafc;
   --bg-surface: #ffffff;
@@ -15,7 +15,7 @@
   --text-main: #0f172a;
   --text-muted: #64748b;
   --text-subtle: #94a3b8;
-
+  
   /* Brand & status */
   --primary: #2563eb;
   --primary-hover: #1d4ed8;
@@ -28,7 +28,7 @@
   --danger-subtle: #fef2f2;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --bg-app: #090d16;
   --bg-surface: #0f172a;
   --bg-subtle: #1e293b;
@@ -38,7 +38,7 @@
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
   --text-subtle: #64748b;
-
+  
   --primary: #3b82f6;
   --primary-hover: #60a5fa;
   --primary-subtle: #172554;
@@ -63,9 +63,7 @@ body {
 .cdk-drag-preview {
   box-sizing: border-box;
   border-radius: 8px;
-  box-shadow:
-    0 12px 24px -4px rgba(0, 0, 0, 0.15),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   background-color: var(--bg-surface);
   opacity: 0.95;
   cursor: grabbing;
