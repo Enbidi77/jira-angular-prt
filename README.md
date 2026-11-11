@@ -17,14 +17,14 @@ A high-performance, Jira-inspired project management web application built for m
 
 ## 🛠️ Tech Stack
 
-| Domain | Technology |
-|---|---|
-| Monorepo | Nx 24 + pnpm 10 workspaces |
-| Framework | Angular 22+ with TypeScript strict mode |
-| UI & Drag/Drop | Tailwind CSS v4, Angular CDK, Lucide Angular |
+| Domain             | Technology                                          |
+| ------------------ | --------------------------------------------------- |
+| Monorepo           | Nx 24 + pnpm 10 workspaces                          |
+| Framework          | Angular 22+ with TypeScript strict mode             |
+| UI & Drag/Drop     | Tailwind CSS v4, Angular CDK, Lucide Angular        |
 | Backend & Database | Supabase (PostgreSQL, RLS, Auth, Realtime, Storage) |
-| Testing | Vitest (unit tests), Playwright (E2E browser tests) |
-| CI/CD | GitHub Actions |
+| Testing            | Vitest (unit tests), Playwright (E2E browser tests) |
+| CI/CD              | GitHub Actions                                      |
 
 ---
 
@@ -68,16 +68,19 @@ project-management-platform/
 ## ⚡ Quick Start
 
 ### 1. Install Dependencies
+
 ```bash
 pnpm install
 ```
 
 ### 2. Configure Environment
+
 ```bash
 cp .env.example .env
 ```
 
 ### 3. Local Supabase Setup
+
 ```bash
 # Start local Supabase Docker stack
 pnpm supabase:start
@@ -87,28 +90,30 @@ pnpm db:reset
 ```
 
 ### 4. Start Development Server
+
 ```bash
 pnpm dev
 ```
+
 Navigate to `http://localhost:4200`.
 
 ---
 
 ## 🧪 Available Scripts
 
-| Command | Description |
-|---|---|
-| `pnpm dev` | Starts local Angular dev server on `http://localhost:4200` |
-| `pnpm build` | Compiles production SPA bundles into `dist/apps/web` |
-| `pnpm test` | Runs all Vitest unit tests |
-| `pnpm test:e2e` | Runs Playwright end-to-end browser tests |
-| `pnpm lint` | Runs ESLint across all projects |
-| `pnpm typecheck` | Validates TypeScript types across the monorepo |
-| `pnpm format` | Formats all files using Prettier |
-| `pnpm format:check` | Verifies code formatting |
-| `pnpm supabase:start`| Starts local Supabase Docker stack |
-| `pnpm db:reset` | Resets local database and applies all migrations + seeds |
-| `pnpm db:types` | Regenerates TypeScript database types from local PostgreSQL |
+| Command               | Description                                                 |
+| --------------------- | ----------------------------------------------------------- |
+| `pnpm dev`            | Starts local Angular dev server on `http://localhost:4200`  |
+| `pnpm build`          | Compiles production SPA bundles into `dist/apps/web`        |
+| `pnpm test`           | Runs all Vitest unit tests                                  |
+| `pnpm test:e2e`       | Runs Playwright end-to-end browser tests                    |
+| `pnpm lint`           | Runs ESLint across all projects                             |
+| `pnpm typecheck`      | Validates TypeScript types across the monorepo              |
+| `pnpm format`         | Formats all files using Prettier                            |
+| `pnpm format:check`   | Verifies code formatting                                    |
+| `pnpm supabase:start` | Starts local Supabase Docker stack                          |
+| `pnpm db:reset`       | Resets local database and applies all migrations + seeds    |
+| `pnpm db:types`       | Regenerates TypeScript database types from local PostgreSQL |
 
 ---
 
