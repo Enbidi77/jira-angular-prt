@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "ignoreDeprecations": "6.0",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "bundler",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2022",
+    "module": "esnext",
+    "lib": ["es2022", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strict": true,
+    "paths": {
+      "@jira-prt/platform/*": ["./libs/platform/*/src/index.ts"],
+      "@jira-prt/shared/*": ["./libs/shared/*/src/index.ts"],
+      "@jira-prt/features/*": ["./libs/features/*/src/index.ts"],
+      "@jira-prt/domain/*": ["./libs/domain/*/src/index.ts"],
+      "@jira-prt/*": ["./libs/*/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
